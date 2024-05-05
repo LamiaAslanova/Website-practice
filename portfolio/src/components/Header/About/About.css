@@ -1,0 +1,177 @@
+.about{
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about__row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about__left h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.about__left h1 span{
+    color: #55e6a5;
+}
+
+.about__left p{
+    font-weight: 500;
+    margin-bottom: 65px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #a2a2a2;
+}
+
+.about__left .about__left__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about__left #download{
+    color: #02050a;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #55e6a5;
+    padding: 20px 40px;
+    margin-right: 30px;
+    transition: all 0.3s linear 0s;
+}
+
+.about__left #download:hover{
+    background-color: #141c27;
+    color: white;
+}
+
+.about__left #download i{
+    margin-left: 3px;
+}
+
+.about__left #watch{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__left #watch i{
+    color: #55e6a5;
+    font-size: 50px;
+}
+
+.about__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 35px;
+    z-index: 1;
+}
+
+.about__right img{
+    height: 515px;
+}
+
+.about__right::after{
+    position: absolute;
+    content: "";
+    background: url('https://zyan.vercel.app/images/shapes/banner_shape.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 526px;
+    height: 585px;
+    top: 0px;
+    right: 6px;
+}
+
+
+
+/* Media */
+
+
+
+@media screen and (max-width: 1400px){
+    .about__left h1{
+        font-size: 50px;
+    }
+
+    .about__right img{
+        height: 430px;
+    }
+
+    .about__right::after{
+        width: 451px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .about__left h1{
+        font-size: 55px;
+    }
+
+    .about__right img{
+        display: none;
+    }
+
+    .about__right::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #about__first__col-6{
+        width: 720px;
+    }
+
+    #about__second__col-6{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #about__first__col-6{
+        width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #about__first__col-6{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 489px){
+    .about__left .about__left__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about__left #watch{
+        margin-top: 20px;
+    }
+}
