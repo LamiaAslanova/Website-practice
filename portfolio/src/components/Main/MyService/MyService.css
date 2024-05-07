@@ -1,3 +1,5 @@
+/* Service */
+
 .service {
     padding-top: 130px;
     background-color: #02050a;
@@ -61,6 +63,8 @@
     position: absolute;
     top: -15%;
 }
+
+/* Me */
 
 .me {
     padding-top: 140px;
@@ -149,8 +153,8 @@
     position: absolute;
     content: "";
     background: #55e6a5;
-    width: 59%;
-    height: 70%;
+    width: 375px;
+    height: 385px;
     top: 0px;
     right: 0px;
     z-index: -1;
@@ -200,6 +204,8 @@
     line-height: 1.7;
     color: #a2a2a2;
 }
+
+/* Design */
 
 .design {
     background-color: #02050a;
@@ -341,13 +347,20 @@
 
 
 @media screen and (max-width: 1400px) {
+
+    /* Service */
+
     .service__title h2 {
         font-size: 38px;
     }
 
+    /* Me */
+
     .me__left__title h2 {
         font-size: 38px;
     }
+
+    /* Design */
 
     .design__left__title h2{
         font-size: 90px;
@@ -355,6 +368,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    
+    /* Me */
+
     .me__left__text::after {
         width: 75px;
     }
@@ -364,19 +380,26 @@
         padding-right: 0px;
     }
 
+    /* Design */
+
     .design__single__rate p{
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .col-4 {
+
+    /* Service */
+
+    .service__col-4 {
         width: 50%;
     }
 
     .service__title h2 {
         font-size: 42px;
     }
+
+    /* Me */
 
     .me__left__text::after {
         display: none;
@@ -386,8 +409,14 @@
         padding-left: 0px;
     }
 
-    .me__col-6{
+    .me__first__col-6{
         width: 100%;
+    }
+
+    .me__second__col-6{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .me__left__text p{
@@ -399,14 +428,7 @@
         margin-top: 80px;
     }
 
-    .me__right::after {
-        width: 50%;
-        right: 40%;
-    }
-
-    .me__right__text {
-        right: 52%;
-    }
+    /* Design */
 
     .design__col-6{
         width: 100%;
@@ -423,9 +445,20 @@
     .design__left__title h2 span{
         font-size: 52px;
     }
+
+    .design__single__rate p{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
+    /* Service */
+
+    .service {
+        padding-top: 80px;
+    }
+
     #service__row {
         display: flex;
         flex-direction: column;
@@ -441,18 +474,25 @@
         font-size: 36px;
     }
 
-    .me__right::after {
-        width: 70%;
-        right: 20%;
+    /* Me */
+
+    .me {
+        padding-top: 80px;
     }
 
-    .me__right__text {
-        right: 35%;
+    .me__left__title {
+        padding-bottom: 50px;
+    }
+
+    .me__left__title h2 {
+        font-size: 36px;
     }
 
     .rate__col-6{
         width: 100%;
     }
+
+    /* Design */
 
     .design__left__title h2{
         font-size: 70px;
@@ -463,24 +503,24 @@
     }
 
     .design{
-        padding-top: 90px;
-        padding-bottom: 80px;
+        padding: 80px 0px;
     }
 }
 
 @media screen and (max-width: 576px){
+
+    /* Me */
+
     .me__right{
-        display: flex;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .me__right::after {
-        display: none;
+    .me__first__col-6{
+        width: 80%;
     }
 
-    .me__right__text {
-        display: none;
-    }
+    /* Design */
 
     .design__left__title h2{
         font-size: 40px;
@@ -497,8 +537,47 @@
     .design__right h2{
         font-size: 28px;
     }
+}
 
-    .me__col-6{
-        width: 80%;
+@media screen and (max-width: 460px){
+
+    /* Me */
+
+    .me__right img{
+        width: 315px;
+    }
+
+    .me__right::after {
+        width: 290px;
+        height: 330px;
+        top: 6px;
+        right: 6px;
+    }
+
+    .me__right__text {
+        padding: 12px 20px;
+        right: 65px;
+    }
+
+    .me__right__text__right p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    /* Me */
+
+    .me__right img{
+        width: 280px;
+    }
+
+    .me__right::after {
+        width: 265px;
+        height: 300px;
+    }
+
+    .me__right__text {
+        right: 45px;
     }
 }

@@ -1,3 +1,5 @@
+/* Portfolio */
+
 .portfolio{
     background-color: #02050a;
     padding-top: 120px;
@@ -72,6 +74,8 @@
     line-height: 1.7;
     color: #a2a2a2;
 }
+
+/* Review */
 
 .review{
     padding-top: 115px;
@@ -160,6 +164,8 @@
     right: 23px;
 }
 
+/* Slide */
+
 .slide{
     background-color: #55e6a5;
     height: 220px;
@@ -172,9 +178,14 @@
 
 
 @media screen and (max-width: 1400px){
+
+    /* Portfolio */
+
     .portfolio__title h2{
         font-size: 38px;
     }
+
+    /* Review */
 
     .review__title h2{
         font-size: 38px;
@@ -182,20 +193,30 @@
 }
 
 @media screen and (max-width: 1200px){
+
+    /* Portfolio */
+
     .portfolio__col__first{
         width: 50%;
     }
 }
 
 @media screen and (max-width: 992px){
+
+    /* Portfolio */
+
     .portfolio a{
         width: 336px;
         height: 350px;
     }
 
+    /* Review */
+
     .review__col-6{
         width: 100%;
     }
+
+    /* Slide */
 
     .slide{
         height: 152.5px;
@@ -203,6 +224,9 @@
 }
 
 @media screen and (max-width: 768px){
+
+    /* Portfolio */
+
     .portfolio{
         padding-top: 80px;
     }
@@ -223,13 +247,22 @@
         width: 100%;
     }
 
+    /* Review */
+
     .review{
         padding-top: 75px;
         padding-bottom: 75px;
     }
+
+    .review__title h2{
+        font-size: 36px;
+    }
 }
 
 @media screen and (max-width: 576px){
+
+    /* Review */
+
     .single__review .icon__pos{
         display: none;
     }

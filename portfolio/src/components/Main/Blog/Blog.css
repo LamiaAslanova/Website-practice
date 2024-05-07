@@ -1,3 +1,5 @@
+/* Blog */
+
 .blog{
     padding-top: 125px;
     padding-bottom: 210px;
@@ -45,7 +47,6 @@
 .single__blog{
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -56,7 +57,7 @@
     width: 200px;
     text-align: center;
     position: absolute;
-    top: 74.5%;
+    bottom: 45px;
     z-index: 1;
 }
 
@@ -70,9 +71,9 @@
 .single__blog__data{
     background-color: #09101a;
     padding: 45px 30px 30px;
-    width: 90%;
+    width: 374px;
     position: absolute;
-    bottom: -25%;
+    bottom: -95px;
 }
 
 .single__blog__data__top{
@@ -125,6 +126,8 @@
     color: #55e6a5;
 }
 
+/* Subscribe */
+
 .subscribe{
     background-image: url('https://zyan.vercel.app/images/bg/subscribe.jpg');
     background-position: center;
@@ -172,12 +175,27 @@
     font-size: 16px;
     line-height: 1.5;
     background-color: #55e6a5;
-    padding: 20px 40px;
     border: none;
     position: absolute;
     top: 7.8px;
     right: 8px;
     transition: all 0.3s linear 0s;
+}
+
+.subscribe__button__text{
+    padding: 20px 40px;
+}
+
+.subscribe form .subscribe__button__icon{
+    padding: 20px 30px;
+}
+
+.subscribe form .subscribe__button__icon i{
+    font-size: 20px;
+}
+
+.subscribe__button__icon{
+    display: none;
 }
 
 .subscribe form button:hover{
@@ -192,6 +210,9 @@
 
 
 @media screen and (max-width: 1400px){
+
+    /* Blog */
+
     .blog__title h2{
         font-size: 38px;
     }
@@ -204,9 +225,7 @@
         margin-top: 150px;
     }
 
-    .single__blog__data{
-        width: 65%;
-    }
+    /* Subscribe */
 
     .subscribe form input{
         width: 546px;
@@ -214,9 +233,8 @@
 }
 
 @media screen and (max-width: 1200px){
-    .single__blog__data{
-        width: 80%;
-    }
+
+    /* Subscribe */
 
     .subscribe form input{
         width: 616px;
@@ -224,6 +242,9 @@
 }
 
 @media screen and (max-width: 992px){
+
+    /* Blog */
+
     .blog__col-4{
         width: 100%;
     }
@@ -247,10 +268,8 @@
     .blog__title__link{
         margin-top: 45px;
     }
-
-    .single__blog__data{
-        width: 55%;
-    }
+    
+    /* Subscribe */
 
     .subscribe form input{
         width: 576px;
@@ -258,9 +277,8 @@
 }
 
 @media screen and (max-width: 768px){
-    .single__blog__data{
-        width: 70%;
-    }
+
+    /* Blog */
 
     .blog__title h2{
         font-size: 36px;
@@ -270,6 +288,8 @@
         padding-top: 75px;
         padding-bottom: 170px;
     }
+
+    /* Subscribe */
 
     .subscribe form input{
         width: 516px;
@@ -281,6 +301,9 @@
 }
 
 @media screen and (max-width: 576px){
+
+    /* Subscribe */
+
     .subscribe h3{
         font-size: 20px;
     }
@@ -295,9 +318,8 @@
 }
 
 @media screen and (max-width: 500px){
-    .single__blog__data{
-        width: 80%;
-    }
+
+    /* Blog */
 
     .single__blog__data__top{
         display: flex;
@@ -308,11 +330,43 @@
         width: 100%;
     }
 
-    .single__blog__date{
-        display: none;
+    .single__blog__data{
+        width: 80%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .single__blog__data{
-        padding: 30px;
+    .single__blog__data a{
+        font-size: 18px;
+    }
+
+    .single__blog__date{
+        width: 60%;
+        bottom: 50px;
+        padding: 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 462px){
+
+    /* Blog */
+
+    .single__blog__date{
+        width: 60%;
+        bottom: 75px;
+        padding: 10px 0px;
+    }
+
+    .subscribe__button__text{
+        display: none;
+    }
+    
+    .subscribe__button__icon{
+        display: block;
+    }
+
+    .subscribe h3{
+        font-size: 18px;
     }
 }

@@ -65,7 +65,7 @@ function MyService() {
                 <div className="me">
                     <div className="container">
                         <div className="row">
-                            <div className="col-6 me__col-6">
+                            <div className="col-6 me__first__col-6">
                                 <div className="me__left">
                                     <div className="me__left__title">
                                         <h5>ABOUT ME</h5>
@@ -77,7 +77,7 @@ function MyService() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6 me__col-6">
+                            <div className="col-6 me__second__col-6">
                                 <div className="me__right">
                                     <img src="https://zyan.vercel.app/images/about_img.jpg" alt="photo" />
                                     <div className="me__right__text">

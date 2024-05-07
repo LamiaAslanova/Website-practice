@@ -48,10 +48,15 @@ header{
     color: #55e6a5;
 }
 
+.header__middle ul li a:hover i{
+    color: #55e6a5;
+}
+
 .header__middle ul li i{
     color: white;
     font-size: 14px;
     padding-left: 6px;
+    transition: all linear 0.3s;
 }
 
 .header__right{
@@ -73,23 +78,23 @@ header{
     border: none;
 }
 
-.offcanvas-header{
+.side__canva .offcanvas-header{
     background-color: #141c27;
     padding: 25px;
 }
 
-.offcanvas-header a{
+.side__canva .offcanvas-header a{
     width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.offcanvas-header a img{
+.side__canva .offcanvas-header a img{
     width: 100%;
 }
 
-.btn-close{
+.side__canva .btn-close{
     background-color: #55e6a5;
     color: #02050a;
     border-radius: 50%;
@@ -100,24 +105,23 @@ header{
     transition: all 0.3s linear 0s;
 }
 
-.btn-close:hover{
+.side__canva .btn-close:hover{
     background-color: #141c27;
     color: white;
 }
 
-.offcanvas-body{
+.side__canva .offcanvas-body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-color: #09101a;
-    padding: 30px;
+    padding: 260px 30px 30px;
     scrollbar-width: none;
 }
 
-.offcanvas-body-about{
+.side__canva .offcanvas-body-about{
     font-size: 20px;
-    margin-top: 235px;
     margin-bottom: 20px;
     color: white;
     font-weight: 500;
@@ -125,7 +129,7 @@ header{
     letter-spacing: 0.8px;
 }
 
-.offcanvas-body-get{
+.side__canva .offcanvas-body-get{
     font-size: 20px;
     margin-top: 80px;
     color: white;
@@ -134,14 +138,14 @@ header{
     letter-spacing: 0.8px;
 }
 
-.offcanvas-body p{
+.side__canva .offcanvas-body p{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
     color: #a2a2a2;
 }
 
-.offcanvas-body input{
+.side__canva .offcanvas-body input{
     margin-top: 30px;
     background: none;
     border: 1px solid #55e6a5;
@@ -151,17 +155,17 @@ header{
     width: 100%;
 }
 
-.offcanvas-body input::placeholder{
+.side__canva .offcanvas-body input::placeholder{
     color: rgb(255, 255, 255, 0.6);
 }
 
-.offcanvas-body .textarea-container {
+.side__canva .offcanvas-body .textarea-container {
     height: 140px;
     width: 100%;
     margin-top: 30px;
 }
 
-.offcanvas-body .textarea-container textarea{
+.side__canva .offcanvas-body .textarea-container textarea{
     background: none;
     border: 1px solid #55e6a5;
     padding: 22px 20px;
@@ -173,11 +177,11 @@ header{
     overflow: hidden;
 }
 
-.offcanvas-body textarea::placeholder{
+.side__canva .offcanvas-body textarea::placeholder{
     color: rgb(255, 255, 255, 0.6);
 }
 
-.offcanvas-body button{
+.side__canva .offcanvas-body button{
     color: #02050a;
     font-weight: 500;
     font-size: 16px;
@@ -189,14 +193,98 @@ header{
     transition: all 0.3s linear 0s;
 }
 
-.offcanvas-body button:hover{
+.side__canva .offcanvas-body button:hover{
     background-color: #141c27;
     color: white;
 }
 
 
+/* Top canva */
 
-/* Media */
+.top__canva{
+    display: none;
+}
+
+.top__canva .offcanvas-header{
+    background-color: #141c27;
+    padding: 25px;
+    border-bottom: 1px solid #55e6a5;
+}
+
+.top__canva .offcanvas-header a{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top__canva .offcanvas-header a img{
+    width: 100%;
+}
+
+.top__canva .btn-close{
+    background-color: #55e6a5;
+    color: #02050a;
+    border-radius: 0;
+    font-size: 11px !important;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+}
+
+.top__canva .btn-close:hover{
+    background-color: #141c27;
+    color: white;
+}
+
+
+.top__canva .offcanvas-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09101a;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    scrollbar-width: none;
+    overflow-y: visible;
+    border-bottom: 1px solid #55e6a5;
+}
+
+.top__canva .offcanvas-body ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.top__canva .offcanvas-body  ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all linear 0.3s;
+}
+
+.top__canva .offcanvas-body ul li a:hover i{
+    color: #55e6a5;
+}
+
+.top__canva .offcanvas-body  ul li a:hover{
+    color: #55e6a5;
+}
+
+.top__canva .offcanvas-body  ul li i{
+    color: white;
+    font-size: 14px;
+    padding-left: 6px;
+    transition: all linear 0.3s;
+}
+
+
+
+/* Header Media */
 
 
 
@@ -213,6 +301,10 @@ header{
 }
 
 @media screen and (max-width: 992px) {
+    .banner{
+        height: 60vh;
+    }
+
     header .header{
         width: 720px;
         height: 60px;
@@ -243,6 +335,14 @@ header{
     header .header .header__right button{
         font-size: 15px;
     }
+
+    .side__canva{
+        display: none;
+    }
+
+    .top__canva{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -254,5 +354,11 @@ header{
 @media screen and (max-width: 576px) {
     header .header{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 489px){
+    .banner{
+        height: 85vh;
     }
 }

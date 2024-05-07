@@ -99,7 +99,8 @@ function Blog() {
                         <h3>SUBSCRIBE MY NEWSLETTER</h3>
                         <form action="#">
                             <input type="text" placeholder='Enter Your Email' />
-                            <button type='submit'>Notify Now</button>
+                            <button className='subscribe__button__text' type='submit'>Notify Now</button>
+                            <button className='subscribe__button__icon' type='submit'><i className="fa-solid fa-paper-plane"></i></button>
                         </form>
                     </div>
                 </div>

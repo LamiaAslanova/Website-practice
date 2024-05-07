@@ -83,7 +83,7 @@
 
 
 
-/* Media */
+/* Education Media */
 
 
 
@@ -100,6 +100,12 @@
 
     .education__col-6{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .profession h3{
+        font-size: 24px;
     }
 }
 
